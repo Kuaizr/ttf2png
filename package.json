@@ -1,0 +1,17 @@
+{
+  "name": "ttf2png",
+  "version": "1.0.0",
+  "description": "把ttf文件中的每个字(或者是某几个字)转成某个宽度的png格式图片",
+  "repository": "Kuaizr/ttf2png",
+  "main": "ttf2png.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kzer",
+  "license": "ISC",
+  "dependencies": {
+    "@resvg/resvg-js": "^2.3.1",
+    "opentype.js": "^1.3.4",
+    "svgpath": "^2.6.0"
+  }
+}
