@@ -71,7 +71,7 @@ function svg2png(svg,exportPath,width,save) {
     const pngData = resvg.render()
     const pngBuffer = pngData.asPng()
     if(save){
-        fs.writeFileSync(path.join(__dirname, exportPath), pngBuffer)
+        fs.writeFileSync(path.join(process.cwd(), exportPath), pngBuffer)
     }
     return pngBuffer
 }
@@ -80,8 +80,8 @@ function fromFile(fontPath,noUpsideDown,width,save = true) {
     //获取字体文件名称
     const fontname = fontPath.substr(fontPath.lastIndexOf("/")+1,fontPath.lastIndexOf(".")-fontPath.lastIndexOf("/")-1)
     //创建保存图片的文件夹
-    if(fs.existsSync(path.join(__dirname,fontname)) == false && save){
-        fs.mkdirSync(path.join(__dirname,fontname))
+    if(fs.existsSync(path.join(process.cwd(),fontname)) == false && save){
+        fs.mkdirSync(path.join(process.cwd(),fontname))
     }
 
     const pngData = []
@@ -105,8 +105,8 @@ function fromChars(fontPath,noUpsideDown,width,chars,save = true) {
     //获取字体文件名称
     const fontname = fontPath.substr(fontPath.lastIndexOf("/")+1,fontPath.lastIndexOf(".")-fontPath.lastIndexOf("/")-1)
     //创建保存图片的文件夹
-    if(fs.existsSync(path.join(__dirname,fontname)) == false && save){
-        fs.mkdirSync(path.join(__dirname,fontname))
+    if(fs.existsSync(path.join(process.cwd(),fontname)) == false && save){
+        fs.mkdirSync(path.join(process.cwd(),fontname))
     }
 
     const pngData = []
