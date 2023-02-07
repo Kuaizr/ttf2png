@@ -1,6 +1,6 @@
 {
   "name": "ttf2png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "把ttf文件中的每个字(或者是某几个字)转成某个宽度的png格式图片",
   "repository": "Kuaizr/ttf2png",
   "main": "ttf2png.js",
