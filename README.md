@@ -21,11 +21,11 @@ ttf2png提供两个API:
 >
 > 参数：
 >
-> - fontPath:字体文件路径
-> - 图片是否上下翻转(部分字体文件需要)
-> - width:图片宽度
-> - chars:需要导出的文字
-> - save:默认为true,是否把图片保存到当前目录下的字体文件目录
+> - fontPath:str       字体文件路径
+> - onUpsideDown:bool  图片是否上下翻转(部分字体文件需要)
+> - width:int          图片宽度
+> - chars:str          需要导出的文字
+> - save:bool          默认为true,是否把图片保存到当前目录下的字体文件目录
 
 **ttf2png.fromFile(fontPath,noUpsideDown,width,save)**
 
@@ -33,7 +33,7 @@ ttf2png提供两个API:
 >
 > 参数：
 >
-> - fontPath:字体文件路径
-> - 图片是否上下翻转(部分字体文件需要)
-> - width:图片宽度
-> - save:默认为true,是否把图片保存到当前目录下的字体文件目录
+> - fontPath:str       字体文件路径
+> - onUpsideDown:bool  图片是否上下翻转(部分字体文件需要)
+> - width:int          图片宽度
+> - save:bool          默认为true,是否把图片保存到当前目录下的字体文件目录
